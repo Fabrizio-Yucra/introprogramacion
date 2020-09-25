@@ -1,2 +1,2 @@
-variable_uno = 5+10/3
+variable_uno = "que pasa crack,fiera"
 print(variable_uno)
