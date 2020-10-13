@@ -2,7 +2,6 @@ tiempo = int(input("Duracion de tramo: "))
 suma = 0
 while tiempo > 0:
     suma = tiempo + suma
-    tiempo = tiempo + 1
     tiempo = int(input("Duracion de tramo: "))
 operacion = suma // 60
 operacion_1 = suma % 60
