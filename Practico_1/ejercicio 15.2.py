@@ -1,7 +1,8 @@
 numero = int(input("Ingrese un numero: "))
-suma = 1
+suma = 2
 resultado = 0
 f = f"*"
+print(1, end=" ")
 while suma <= numero:
     resultado = suma
     var_1 = suma - suma + 1
@@ -16,6 +17,5 @@ while suma <= numero:
             resultado = int((resultado * 3) + 1)
             var = resultado - resultado + 1
             print(var * f, end=" ")
-
     suma = suma + 1
 print("*")
