@@ -8,7 +8,3 @@ while numero != 1:
     else:
         numero = (numero * 3) + 1
         print(int(numero), end=" ")
-
-
-
-
