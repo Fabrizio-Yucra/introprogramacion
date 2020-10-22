@@ -1,6 +1,6 @@
 def tabla(numero):
     print()
-    print(f"Tabla del {numero}")
+    print(f"Tabla del {numero}:")
     print()
     for i in range(1, 11):
         print(f"{numero} * {i} : {numero * i}")
