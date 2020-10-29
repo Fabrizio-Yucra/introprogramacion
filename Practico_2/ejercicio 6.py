@@ -16,7 +16,5 @@ def es_palindromo(palabra):
     else:
         print(False)
 
-
 pal = str(input("Ingrese una palabra: "))
-
 es_palindromo(pal)
