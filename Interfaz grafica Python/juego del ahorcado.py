@@ -76,8 +76,9 @@ lista_de_palabras = txtpalabra.readlines()
 txtpalabra.close()
 
 wins = 0
-while wins < 3:
+vidas = 3
 
+while wins < 3 and vidas > 0:
 
     for palabraoculta in lista_de_palabras:
         palabraoculta = palabraoculta.strip()
@@ -129,12 +130,17 @@ while wins < 3:
 
         if intentos == 0:
             print("Se terminaron tus intentos! Te ahorcaste!")
+            vidas -= 1
+            print(f"Tienes {vidas} vidas, ten cuidado")
+
+
+
 
 txtpalabra = open("palabras_intermedias.txt", "r")
 lista_de_palabras = txtpalabra.readlines()
 txtpalabra.close()
 
-while wins < 6:
+while wins < 6 and vidas > 0:
 
     for palabraoculta in lista_de_palabras:
         palabraoculta = palabraoculta.strip()
@@ -186,12 +192,17 @@ while wins < 6:
 
         if intentos == 0:
             print("Se terminaron tus intentos! Te ahorcaste!")
+            vidas -= 1
+            print(f"Tienes {vidas} vidas, ten cuidado")
+
+    if vidas == 0:
+        intentos = 0
 
 txtpalabra = open("palabras_complejas.txt", "r")
 lista_de_palabras = txtpalabra.readlines()
 txtpalabra.close()
 
-while wins < 9:
+while wins < 9 and vidas > 0:
 
     for palabraoculta in lista_de_palabras:
         palabraoculta = palabraoculta.strip()
@@ -243,4 +254,8 @@ while wins < 9:
 
         if intentos == 0:
             print("Se terminaron tus intentos! Te ahorcaste!")
+            vidas -= 1
+            print(f"Tienes {vidas} vidas, ten cuidado")
 
+    if vidas == 0:
+        intentos = 0
