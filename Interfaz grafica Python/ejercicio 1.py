@@ -6,7 +6,6 @@ def factorial(a):
         numero = str(contador) + "!"
         FACT.append(numero)
         contador += 1
-    print(FACT)
 
     multi = 1
     while a > 1:
@@ -14,4 +13,5 @@ def factorial(a):
         a -= 1
     print(f"El factorial de {num} es: {multi}")
 
-factorial(5)
+for b in range(1, 21):
+    factorial(b)
